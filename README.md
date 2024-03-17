@@ -1,11 +1,11 @@
-# js-lab-104
-### Lab104 Array: คำนวณผลรวม
-ให้คำนวณผลรวมของ salaries ใน object โดยใช้ Object.keys, Object.values และ Object.entries
+# js-lab-105
+### Lab105 Array: เช็คobjectว่าง
+ให้เขียนฟังก์ชัน checkEmptyObj(obj) เพื่อเช็คว่า obj เป็น object ว่างหรือไม่
 
 ```JavaScript
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
-};
+console.log(checkEmptyObj({})); // true
+console.log(checkEmptyObj({ name: "John", age: 30 })); // false
+console.log(checkEmptyObj(null)); // false
+console.log(checkEmptyObj([])); // false
+console.log(checkEmptyObj(123)); // false
 ```
